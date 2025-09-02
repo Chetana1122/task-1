@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#home {
+  text-align: center;
+  padding: 2rem;
+  background: #e3f2fd;
+}
+
+.profile-img {
+  width: 100px; /* ✅ Updated image size */
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+#skills, #projects, #contact {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid #2196f3;
+}
+
+.project-card a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input, form textarea {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+button {
+  background: #2196f3;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
